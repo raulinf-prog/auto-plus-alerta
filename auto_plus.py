@@ -1,3 +1,4 @@
+raise Exception("PRUEBA: ESTOY EJECUTANDO ESTE ARCHIVO")
 import requests
 import os
 
