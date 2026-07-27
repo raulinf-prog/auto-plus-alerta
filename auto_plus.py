@@ -7,7 +7,7 @@ URL = "https://www.mintur.gob.es/PortalAyudas/programa-auto/Paginas/Index.aspx"
 TOKEN = os.environ["TELEGRAM_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
-url2 = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+url2 = "https://api.telegram.org/bot{TOKEN}/sendMessage"
 
 respuesta = requests.post(
     url2,
