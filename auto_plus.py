@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import os
-
+print("🚀 ESTOY EJECUTANDO ESTE ARCHIVO")
 URL = "https://www.mintur.gob.es/PortalAyudas/programa-auto/Paginas/Index.aspx"
 
 TOKEN = os.environ["TELEGRAM_TOKEN"]
