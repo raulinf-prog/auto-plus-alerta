@@ -7,6 +7,19 @@ URL = "https://www.mintur.gob.es/PortalAyudas/programa-auto/Paginas/Index.aspx"
 TOKEN = os.environ["TELEGRAM_TOKEN"]
 CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
+url2 = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+
+respuesta = requests.post(
+    url2,
+    data={
+        "chat_id": CHAT_ID,
+        "text": "✅ Prueba: el avisador Auto+ funciona"
+    }
+)
+
+print("Código:", respuesta.status_code)
+print("Respuesta Telegram:", respuesta.text)
+
 
 def enviar_telegram(texto):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
