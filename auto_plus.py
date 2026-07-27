@@ -56,3 +56,7 @@ if comprobar():
 
 else:
     print("Todavía cerrado")
+    enviar_telegram(
+        "🚗 AUTO+ PUEDE ESTAR ABIERTO\n\n"
+        "Revisa la convocatoria:"
+        "\n" + URL
