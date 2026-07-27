@@ -25,16 +25,16 @@ jobs:
       - name: Instalar librerías
         run: |
           pip install -r requirements.txt
-      - name: Ver archivos
+      
+      - name: Ver archivo ejecutado
         run: |
-          ls -la
-          echo "-----"
-          head -20 auto_plus.py
-
+          echo "CONTENIDO DE AUTO_PLUS.PY:"
+          cat auto_plus.py
+      
       - name: Revisar Auto+
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-
+      
         run: |
           python auto_plus.py
