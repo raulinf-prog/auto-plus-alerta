@@ -1,5 +1,8 @@
 name: Avisador Auto+
 
+
+# PRUEBA AUTO+
+
 on:
   schedule:
     - cron: "*/5 * * * *"
@@ -14,7 +17,7 @@ jobs:
 
     steps:
 
-      - name: Descargar código
+      - name: Descargar código2
         uses: actions/checkout@v5
 
       - name: Instalar Python
