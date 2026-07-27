@@ -25,6 +25,11 @@ jobs:
       - name: Instalar librerías
         run: |
           pip install -r requirements.txt
+      - name: Ver archivos
+        run: |
+          ls -la
+          echo "-----"
+          head -20 auto_plus.py
 
       - name: Revisar Auto+
         env:
